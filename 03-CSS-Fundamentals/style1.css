@@ -1,0 +1,36 @@
+article {
+  border: 5px solid #444;
+}
+
+.main-header {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #dedede;
+}
+
+.price {
+  font-size: 25px;
+}
+
+.ship_info {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: square;
+}
+
+button {
+  font-size: 25px;
+  background-color: black;
+  color: #dedede;
+}
+
+button:hover {
+  background-color: #dd3813;
+}
