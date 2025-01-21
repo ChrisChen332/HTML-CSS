@@ -1,3 +1,8 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
 article {
   border: 5px solid #444;
 }
@@ -15,9 +20,15 @@ article {
 .ship_info {
   font-size: 10px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
-a:hover {
+.more:link,
+.more:visited {
+  color: black;
+}
+.more:hover,
+.more:active {
   text-decoration: none;
 }
 
@@ -29,8 +40,14 @@ button {
   font-size: 25px;
   background-color: black;
   color: #dedede;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button:hover {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
 }
 
-button:hover {
-  background-color: #dd3813;
+.detail-title {
+  text-transform: uppercase;
 }
