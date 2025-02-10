@@ -1,6 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   color: #444;
   font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 25px;
+  /* height: 80px; */
 }
 h1,
 h2,
@@ -8,6 +29,12 @@ h3 {
   color: #1098ad;
 }
 
+article {
+  margin-bottom: 50px;
+}
+.post-header {
+  margin-bottom: 20px;
+}
 h1 {
   font-size: 26px;
   text-transform: uppercase;
@@ -15,11 +42,15 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -31,8 +62,14 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 10px;
 }
 
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
 li {
   font-size: 20px;
   margin-bottom: 10px;
@@ -68,18 +105,12 @@ body {
   /* background-color: ; */
 }
 
-.main-header {
-  background-color: #f7f7f7;
-  /* padding: 20px;
-  padding-left: 40px;
-  padding-right: 40px; */
-  padding: 20px 40px;
-}
-
 aside {
   background-color: #bee0f4cd;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  padding: 25px 0;
+  width: 500px;
 }
 
 li:first-child {
@@ -120,4 +151,51 @@ a:active {
   background-color: black;
   font-style: italic;
 }
-/* LVHA */
+
+.post-image {
+  width: 100%;
+  height: auto;
+}
+
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  font-size: 22px;
+  padding: 10px;
+  background-color: #1098ad;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin: 5px;
+}
+/* 
+h2::first-letter {
+  font-size: 60px;
+} */
+
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  color: #444;
+  font-size: 10px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 5px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}

@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.4;
@@ -26,7 +32,9 @@ article {
 }
 
 .price {
+  font-size: 30px;
   margin: 0;
+  float: left;
 }
 .post .price {
   font-size: 25px;
@@ -36,7 +44,8 @@ article {
   font-size: 10px;
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 0;
+  margin-top: 10px;
+  float: right;
 }
 
 .more:link,
@@ -52,6 +61,11 @@ ul {
   list-style: square;
 }
 
+ul,
+li {
+  padding-bottom: 10px;
+}
+
 button {
   font-size: 25px;
   background-color: black;
@@ -65,8 +79,9 @@ button:hover {
   background-color: #ffffff;
 }
 
-.detail-title {
+.details-title {
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .main-header::before {
@@ -87,6 +102,7 @@ button:hover {
   background-color: black;
   display: inline-block;
   margin-right: 10px;
+  margin-top: 25px;
 }
 .c2 {
   background-color: rgb(46, 19, 222);
@@ -106,4 +122,31 @@ button:hover {
 
 .c6 {
   background-color: #e97910;
+}
+
+.container1 {
+  width: 250px;
+  float: left;
+  margin-right: 25px;
+}
+
+.container2 {
+  width: 250px;
+  float: left;
+  position: relative;
+  margin-top: 20px;
+}
+.container3 {
+  width: 250px;
+  float: right;
+  margin-top: 20px;
+}
+
+.more {
+  padding-top: 10px;
+}
+
+.description {
+  clear: both;
+  margin-bottom: 15px;
 }
