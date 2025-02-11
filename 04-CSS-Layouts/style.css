@@ -112,7 +112,7 @@ aside {
   background-color: #bee0f4cd;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 25px 30px;
+  padding: 45px 50px;
 }
 
 li:first-child {
@@ -161,7 +161,6 @@ a:active {
 
 nav a:link {
   margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -189,7 +188,8 @@ h2::first-letter {
   font-size: 60px;
 } */
 
-h2::after {
+/* FLOAT */
+/* h2::after {
   content: "TOP";
   background-color: yellow;
   color: #444;
@@ -224,4 +224,54 @@ aside {
 
 footer {
   clear: both;
+} */
+
+/* FLEX BOX */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.row {
+  display: flex;
+  gap: 75px;
+  align-items: start;
+}
+
+aside {
+  flex: 1 0 300px;
+}
+article {
+  flex: 1 0 825px;
 }
