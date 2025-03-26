@@ -21,7 +21,7 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
   /* height: 80px; */
 }
 h1,
@@ -31,10 +31,10 @@ h3 {
 }
 
 article {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .post-header {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 h1 {
   font-size: 26px;
@@ -263,7 +263,7 @@ footer {
   font-style: italic;
 }
 
-.row {
+/* .row {
   display: flex;
   gap: 75px;
   align-items: start;
@@ -274,4 +274,27 @@ aside {
 }
 article {
   flex: 1 0 825px;
+} */
+
+/* CSS Grid */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1/-1;
+}
+
+article {
+}
+
+aside {
+}
+
+footer {
+  grid-column: 1/-1;
 }
